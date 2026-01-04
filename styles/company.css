@@ -1,0 +1,87 @@
+
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(../back4.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: Arial, sans-serif;
+    
+    min-height: 100vh; 
+}
+
+ul {
+    list-style-type: none;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto; 
+    padding: 20px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    
+    margin-bottom: 20px;
+}
+
+.navbar h2 {
+    padding-left: 20px;
+}
+
+.navbar ul {
+    padding-right: 20px;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; }
+
+.about,
+.Join,
+.Qualification {
+    background-color: #f6eee3;
+    padding: 20px;
+    border-radius: 8px; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    opacity:0.8;
+    
+}
+
+.about h2,
+.Join h2,
+.Qualification h2 {
+    margin-bottom: 10px;
+}
+
+.about li,
+.Join li,
+.Qualification li {
+    margin-bottom: 8px;
+    line-height: 1.5;
+}
+.registerbtn {
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
+  padding: 16px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity:2x.0;
+  font-size:20px;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+
