@@ -92,7 +92,7 @@ const questions = [
 ];
 
 // ✅ Fix 1: correct id "question-container"
-const container = document.getElementById("question-container");
+const container = document.getElementById("container");
 
 /* Render questions */
 questions.forEach((item) => {

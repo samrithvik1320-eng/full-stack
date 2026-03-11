@@ -1,4 +1,4 @@
-const container = document.getElementById("question-container")
+
 const questions = [
     {
       id: 1,
@@ -74,39 +74,42 @@ const questions = [
     }
 ];
 
-questions.forEach((item, index) => {
-    const card = document.createElement(`div`)
-    card.classList.add(`exam${item.id}`,"card")
-    card.innerHTML = `
-        <b>${item.id}. ${item.question}</b> <br>
-        <input type="radio" id="option${item.id}1" name="question${item.id}" value="a"/>
-        <label for="option${item.id}1">${item.a}</label><br />
-        <input type="radio" id="option${item.id}2" name="question${item.id}" value="b"/>
-        <label for="option${item.id}2">${item.b}</label><br />
-        <input type="radio" id="option${item.id}3" name="question${item.id}" value="c"/>
-        <label for="option${item.id}3">${item.c}</label>
-    `
-    container.appendChild(card)
-})
+const container = document.getElementById("container");
 
-const submitBtn = document.createElement('button')
-submitBtn.type = "submit"
-submitBtn.classList.add("submitBtn")
-submitBtn.textContent = "Submit"
+/* Render questions */
+questions.forEach((item) => {
+  const card = document.createElement("div");
+  card.classList.add("card");
 
-container.appendChild(submitBtn)
+  card.innerHTML = `
+    <b>${item.id}. ${item.question}</b><br><br>
+    <input type="radio" name="question${item.id}" value="a"> ${item.a}<br>
+    <input type="radio" name="question${item.id}" value="b"> ${item.b}<br>
+    <input type="radio" name="question${item.id}" value="c"> ${item.c}<br>
+    <input type="radio" name="question${item.id}" value="d"> ${item.d}<br>
+  `;
 
-submitBtn.addEventListener("click", (e) => {
- e.preventDefault()
+  container.appendChild(card);
+});
+
+/* Submit button */
+const submitBtn = document.createElement("button");
+submitBtn.textContent = "Submit";
+submitBtn.type = "button"; // ✅ Fix 3: prevent form submit reload
+container.appendChild(submitBtn);
+
+/* Check answers */
+submitBtn.addEventListener("click", () => {
   let score = 0;
 
-  questions.forEach((item) => {
+  questions.forEach((q) => {
     const selectedOption = document.querySelector(
-      `input[name="question${item.id}"]:checked`
+      `input[name="question${q.id}"]:checked`
     );
-    console.log(selectedOption.value)
+
     if (selectedOption) {
-      if (selectedOption.value === item.correctAnswer) {
+      // ✅ Fix 2: q.correctAnswer instead of e.correctAnswer
+      if (selectedOption.value === q.correctAnswer) {
         score++;
         selectedOption.parentElement.style.border = "2px solid green";
       } else {
@@ -115,38 +118,5 @@ submitBtn.addEventListener("click", (e) => {
     }
   });
 
-  alert(`Your Score: ${score} / ${questions.length}`);
+  alert(`Your score: ${score} / ${questions.length}`);
 });
-
-
-// const container = document.getElementById("question-container");
-
-// fetch("https://quizapi.io/api/v1/ai?apiKey=dCaP3J4Yd5Fv9h7baxp5hTwUwQJGbxxxtzHIScGd")
-//   .then(res => res.json())
-//   .then(questions => {
-//     container.innerHTML = "";
-//     console.log(questions)
-
-//     questions.forEach(item => {
-//       const card = document.createElement("div");
-//       card.classList.add("card");x
-
-//       card.innerHTML = `
-//         <b>${item.id}. ${item.question}</b><br>
-
-//         <input type="radio" name="question${item.id}">
-//         ${item.answers.answer_a}<br>
-
-//         <input type="radio" name="question${item.id}">
-//         ${item.answers.answer_b}<br>
-
-//         <input type="radio" name="question${item.id}">
-//         ${item.answers.answer_c}<br>
-
-//         <input type="radio" name="question${item.id}">
-//         ${item.answers.answer_c}<br>
-//       `;
-
-//       container.appendChild(card);
-//     });
-//   });
