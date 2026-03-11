@@ -1,87 +1,182 @@
-*{
-    margin: 0px;
-    padding: 0px;
+/* =============================
+   CATCH THE CAREER - gov.css
+   Navy Blue + Gold (Premium) Theme
+   ============================= */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-body{
-    background-image: url(../back4.jpg);
-    background-size: cover;  
-      font-family: Arial, sans-serif;
-} 
+
+body {
+  font-family: 'DM Sans', 'Segoe UI', sans-serif;
+  background: #F0F4FA;
+  color: #0D1B3E;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* ---- NAV ---- */
 nav {
-    
-    width: 100%;
-    display: flex; 
-    justify-content: space-between; 
-    align-items: center; 
-    background-color: rgba(248, 250, 134, 0.9); 
-    padding: 10px 30px; 
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 48px;
+  background: #0D1B3E;
+  border-bottom: 2px solid #C9A84C;
 }
 
-nav > h1 {
-    font-size: 24px;
-    padding: 10px 0;
+nav b {
+  font-size: 20px;
+  font-weight: 700;
+  color: #C9A84C;
+  letter-spacing: 0.3px;
 }
 
-nav > ol {
-    display: flex; 
-    list-style-type: none; 
+.title {
+  display: flex;
+  gap: 32px;
 }
 
-nav > ol > li {
-    padding: 0 15px; 
+.title a {
+  color: #BDC8E0;
+  text-decoration: none;
+  font-size: 14px;
+  transition: color 0.2s;
 }
 
-ol > li > a {
-    text-decoration: none;
-    color: black;
-    font-size: 20px;
-    font-family: Arial, sans-serif;
-    padding: 10px;
-    display: block;
-    transition: color 0.3s;
+.title a b {
+  font-weight: 500;
+  color: inherit;
 }
 
-ol > li > a:hover {
-    color: #3367bbc6; 
-
-
-}
-.central a{
-    text-decoration: none;
-    color: black;
-}
-.state a{
-    text-decoration: none;
-    color: black;
-}
-.content{
-    display: flex;
-    justify-content: space-evenly;
-}
-.state{
-    padding-top: 200px;
-    line-height: 1.2cm;
-    font-size: 20px;
-      
+.title a:hover {
+  color: #C9A84C;
 }
 
-.central{
-    padding-top: 200px;
-    line-height: 1.2cm;
-    font-size: 20px;
-      
-}
-.list{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-.list2{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+/* ---- CONTENT ---- */
+.content {
+  display: flex;
+  gap: 40px;
+  padding: 60px 48px;
+  justify-content: center;
+  flex: 1;
+  flex-wrap: wrap;
 }
 
+/* ---- EXAM LIST CARDS ---- */
+.central,
+.state {
+  background: #FFFFFF;
+  border: 1.5px solid #D0D8EC;
+  border-radius: 14px;
+  padding: 36px 40px;
+  min-width: 280px;
+  flex: 1;
+  max-width: 400px;
+  transition: border-color 0.2s, box-shadow 0.2s, transform 0.2s;
+}
 
+.central:hover,
+.state:hover {
+  border-color: #C9A84C;
+  box-shadow: 0 8px 28px rgba(13, 27, 62, 0.12);
+  transform: translateY(-3px);
+}
 
+.list,
+.list2 {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.list h2,
+.list2 h2 {
+  font-size: 17px;
+  font-weight: 700;
+  color: #0D1B3E;
+  margin-bottom: 8px;
+  padding-bottom: 12px;
+  border-bottom: 2px solid #C9A84C;
+}
+
+.list a,
+.list2 a {
+  color: #4A5E8A;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 10px 14px;
+  border-radius: 8px;
+  border: 1px solid #E8EEF8;
+  background: #F5F7FC;
+  display: block;
+  transition: all 0.2s;
+}
+
+.list a:hover,
+.list2 a:hover {
+  background: #0D1B3E;
+  color: #C9A84C;
+  border-color: #0D1B3E;
+  padding-left: 20px;
+}
+
+/* ---- FOOTER ---- */
+footer {
+  background: #0D1B3E;
+  border-top: 2px solid #C9A84C;
+  padding: 40px 48px 28px;
+  text-align: center;
+}
+
+.footer-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 24px;
+}
+
+.footer-logo h2 {
+  font-size: 18px;
+  font-weight: 700;
+  color: #C9A84C;
+}
+
+.footer-logo b {
+  font-size: 14px;
+  font-weight: 400;
+  color: #BDC8E0;
+}
+
+.term {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+.term p {
+  font-size: 13px;
+  color: #BDC8E0;
+  cursor: pointer;
+  transition: color 0.2s;
+}
+
+.term p:hover {
+  color: #C9A84C;
+}
+
+.copy-rights p {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  font-size: 12px;
+  color: #6B7FA8;
+}

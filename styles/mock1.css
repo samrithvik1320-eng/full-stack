@@ -1,4 +1,7 @@
-
+/* =============================
+   CATCH THE CAREER - mock1.css
+   Navy Blue + Gold (Premium) Theme
+   ============================= */
 
 * {
   margin: 0;
@@ -16,11 +19,6 @@ body {
 }
 
 /* ---- NAV ---- */
-.container {
-  flex: 1;
-  background: #F0F4FA;
-}
-
 nav {
   display: flex;
   justify-content: space-between;
@@ -30,84 +28,131 @@ nav {
   border-bottom: 2px solid #C9A84C;
 }
 
-nav h1 {
+nav b {
   font-size: 20px;
   font-weight: 700;
   color: #C9A84C;
   letter-spacing: 0.3px;
 }
 
-nav ol {
+.title {
   display: flex;
   gap: 32px;
-  list-style: none;
 }
 
-nav ol li a {
+.title a {
   color: #BDC8E0;
   text-decoration: none;
   font-size: 14px;
-  font-weight: 500;
   transition: color 0.2s;
 }
 
-nav ol li a:hover {
+.title a b {
+  font-weight: 500;
+  color: inherit;
+}
+
+.title a:hover {
   color: #C9A84C;
 }
 
-/* ---- CONTENT / COMPANY CARDS ---- */
+/* ---- CONTENT / EXAM CARDS ---- */
 .content {
   display: flex;
   flex-wrap: wrap;
   gap: 32px;
   padding: 60px 48px;
-  justify-content: space-around;
+  justify-content: center;
+  flex: 1;
 }
 
-.freshwork,
-.zoho {
+.exam1,
+.exam2,
+.exam3 {
   background: #FFFFFF;
   border: 1.5px solid #D0D8EC;
   border-radius: 14px;
-  padding: 28px 32px;
+  padding: 28px 28px 32px;
   text-align: center;
+  width: 300px;
   transition: border-color 0.2s, box-shadow 0.2s, transform 0.2s;
-  cursor: pointer;
 }
 
-.freshwork:hover,
-.zoho:hover {
+.exam1:hover,
+.exam2:hover,
+.exam3:hover {
   border-color: #C9A84C;
   box-shadow: 0 8px 28px rgba(13, 27, 62, 0.12);
   transform: translateY(-4px);
 }
 
-.freshwork img,
-.zoho img {
+.exam1 img,
+.exam2 img,
+.exam3 img {
   border-radius: 8px;
   object-fit: cover;
   display: block;
-  margin: 0 auto 16px;
+  margin: 0 auto 18px;
 }
 
-.freshwork p,
-.zoho p {
-  margin-top: 12px;
+.exam1 h3,
+.exam2 h3,
+.exam3 h3 {
   font-size: 15px;
-  font-weight: 600;
+  font-weight: 700;
   color: #0D1B3E;
+  margin-bottom: 12px;
 }
 
-.freshwork p a,
-.zoho p a {
-  color: #0D1B3E;
-  text-decoration: none;
-  transition: color 0.2s;
+.exam1 p,
+.exam2 p,
+.exam3 p {
+  font-size: 13px;
+  color: #6B7FA8;
+  line-height: 1.7;
+  margin-bottom: 22px;
 }
 
-.freshwork p a:hover,
-.zoho p a:hover {
+/* ---- BUTTONS ---- */
+.btn1,
+.btn2,
+.btn3 {
+  background: #0D1B3E;
+  border: none;
   color: #C9A84C;
+  padding: 11px 36px;
+  font-size: 14px;
+  font-weight: 700;
+  font-family: inherit;
+  border-radius: 8px;
+  cursor: pointer;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  transition: background 0.2s, box-shadow 0.2s;
+}
+
+.btn1:hover,
+.btn2:hover,
+.btn3:hover {
+  background: #162454;
+  box-shadow: 0 4px 20px rgba(13, 27, 62, 0.3);
+}
+
+.exam1 a,
+.exam2 a,
+.exam3 a {
+  text-decoration: none;
+}
+
+.exam1 img,
+.exam2 img,
+.exam3 img {
+  height: 250px;
+  width: 250px;
+  object-fit: cover;
+  border-radius: 8px;
+  display: block;
+  margin: 0 auto 18px;
 }
 
 /* ---- FOOTER ---- */

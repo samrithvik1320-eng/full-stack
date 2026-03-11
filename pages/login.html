@@ -8,29 +8,30 @@
   </head>
   <body>
     <div class="container">
-      <div class="login-box">
-        <h2>Welcome Back</h2>
-        <form>
-          <div class="input-group">
-            <label>Username</label>
-            <input type="text" id="username" /><br />
-            <span id="errorMessage"></span>
-
-
-          </div>
-          <div class="input-group">
-            <label>Password</label> 
-            <input type="password" id="password" /><br />
-            <span id="passwordMessage"></span> 
-
-
-          </div>
-          
-            <button type="button" onclick="validate1(event)">Login</button>
-        </form>
-      </div>
+    <nav>
+      <h1>Catch The Career</h1>
+      <ol>
+        <li><a href="./pages/companies.html">Companies</a></li>
+        <li><a href="./pages/mock1.html">Mock Test</a></li>
+        <li><a href="./pages/gov.html">Government Exam</a></li>
+        <li><a href="./login.html">Login</a></li>
+      </ol>
+    </nav>
+    <div class="login-box">
+      
     </div>
-    <script>
+    
+    <!-- <div class="login-box">
+      <label class="login-title">Email</label><br>
+      <input type="email" id="userName" placeholder="Example@email.com"><br>
+      <label class="login-title">Password</label><br>
+      <input type="password" id="password" placeholder="At least 8 characters">
+      <button id="btn1">Submit</button>
+    </div> -->
+  </div>
+    
+  </body>
+  <script>
       function validate1(event) {
           event.preventDefault();
           let a = document.getElementById("username").value;
@@ -51,5 +52,4 @@
         }
       }
     </script>
-  </body>
 </html>

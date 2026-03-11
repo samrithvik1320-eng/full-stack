@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -9,52 +9,109 @@
   <body>
     <div class="container">
       <div class="login-box">
+        <svg
+          class="welcome-icon"
+          xmlns="http://www.w3.org/2000/svg"
+          width="32"
+          height="32"
+          viewBox="0 0 24 24"
+        >
+          <!-- Icon from Material Symbols by Google - https://github.com/google/material-design-icons/blob/master/LICENSE -->
+          <path
+            fill="currentColor"
+            d="M12 17.5q1.325 0 2.513-.575t1.912-1.675q.275-.425.075-.837T15.85 14q-.2 0-.362.088t-.263.262q-.575.775-1.425 1.213T12 16t-1.8-.437t-1.425-1.213q-.125-.175-.288-.262T8.125 14q-.45 0-.65.4t.075.8q.725 1.125 1.913 1.713T12 17.5m3.5-6.5q.625 0 1.063-.437T17 9.5t-.437-1.062T15.5 8t-1.062.438T14 9.5t.438 1.063T15.5 11m-7 0q.625 0 1.063-.437T10 9.5t-.437-1.062T8.5 8t-1.062.438T7 9.5t.438 1.063T8.5 11M12 22q-2.075 0-3.9-.788t-3.175-2.137T2.788 15.9T2 12t.788-3.9t2.137-3.175T8.1 2.788T12 2t3.9.788t3.175 2.137T21.213 8.1T22 12t-.788 3.9t-2.137 3.175t-3.175 2.138T12 22"
+          />
+        </svg>
         <h2>Welcome Back</h2>
         <form>
           <div class="input-group">
-            <label>Username</label>
-            <input type="text" id="username" /><br />
+             
+            <input class="name" type="text" id="username" placeholder="User Name" /><br />
             <span id="errorMessage"></span>
-
-
           </div>
           <div class="input-group">
-            <label>Password</label> 
-            <input type="password" id="password" /><br />
-            <span id="passwordMessage"></span> 
-
-
+            
+            <input class="name" type="password" id="password" placeholder="Enter a Password" /><br />
+            <span id="passwordMessage"></span>
           </div>
-          
-            <button type="button" onclick="validate1(event)">Login</button>
         </form>
       </div>
+      <div class="checkBox">
+        <input type="checkbox" /> Remember me <span>Forget password?</span>
+      </div>
+      <button id="button" type="button" onclick="validate1()">Sign In</button>
+      <div class="continue">Or continue with</div>
+      <div class="app">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="32"
+          height="32"
+          viewBox="0 0 24 24"
+        >
+          <!-- Icon from css.gg by Astrit - https://github.com/astrit/css.gg/blob/master/LICENSE -->
+          <path
+            fill="currentColor"
+            d="M6 12a6 6 0 0 0 11.659 2H12v-4h9.805v4H21.8c-.927 4.564-4.962 8-9.8 8c-5.523 0-10-4.477-10-10S6.477 2 12 2a9.99 9.99 0 0 1 8.282 4.393l-3.278 2.295A6 6 0 0 0 6 12"
+          />
+        </svg>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="32"
+          height="32"
+          viewBox="0 0 24 24"
+        >
+          <!-- Icon from css.gg by Astrit - https://github.com/astrit/css.gg/blob/master/LICENSE -->
+          <path
+            fill="currentColor"
+            d="M9.198 21.5h4v-8.01h3.604l.396-3.98h-4V7.5a1 1 0 0 1 1-1h3v-4h-3a5 5 0 0 0-5 5v2.01h-2l-.396 3.98h2.396z"
+          />
+        </svg>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="32"
+          height="32"
+          viewBox="0 0 24 24"
+        >
+          <!-- Icon from Iconoir by Luca Burgio - https://github.com/iconoir-icons/iconoir/blob/main/LICENSE -->
+          <g fill="none" stroke="currentColor" stroke-width="1.5">
+            <path
+              d="M16 2c.363 2.18-1.912 3.83-3.184 4.571c-.375.219-.799-.06-.734-.489C12.299 4.64 13.094 2 16 2Z"
+            />
+            <path
+              d="M9 6.5c.897 0 1.69.2 2.294.42a3.58 3.58 0 0 0 2.412 0A6.7 6.7 0 0 1 16 6.5c1.085 0 2.465.589 3.5 1.767C16 11 17 15.5 20.269 16.692c-1.044 2.867-3.028 4.808-4.77 4.808c-1.5 0-1.499-.7-2.999-.7s-1.5.7-3 .7c-2.5 0-5.5-4-5.5-9c0-4 3-6 5-6Z"
+            />
+          </g>
+        </svg>
+      </div>
     </div>
-    <script>
-      function validate1(event) {
-          event.preventDefault();
-          let a = document.getElementById("username").value;
-          let b = document.getElementById("password").value;
-       
-        if (a.length == 0 || a.length < 4) {
-          errorMessage.style.color = "red";
-          errorMessage.innerText = "Username is required";
-        } 
-        else {
-            errorMessage.style.color = "green";
-          errorMessage.innerText = "Username is validated sucessfully";
-          
+    
+      
 
-        }
-         if (b.length == 0 || b.length < 4) {
-          passwordMessage.style.color = "red";
-          passwordMessage.innerText = "Password is required";
-        } else {
-          passwordMessage.style.color = "green";
-          passwordMessage.innerText = "Password is validated sucessfully";
-          window.location.href="../"
-        }
-      }
-    </script>
-   </body>
-</html>  
+<script>
+function validate1() {
+
+  let username = document.getElementById("username").value;
+  let password = document.getElementById("password").value;
+
+  let userError = document.getElementById("errorMessage");
+  let passError = document.getElementById("passwordMessage");
+
+  userError.textContent = "";
+  passError.textContent = "";
+
+  if (username.length < 4) {
+    userError.textContent = "Username is required";
+  }
+
+  if (password.length < 4) {
+    passError.textContent = "Password is required";
+  }
+
+  if (username.length >= 4 && password.length >= 4) {
+    alert("Successfully Login");
+  }
+}
+</script>
+    
+  </body>
+</html>

@@ -1,29 +1,74 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
-}
 body{
-    background-image: url(../back4.jpg);
-    background-size: cover;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #e0e5ec;
 }
 .container{
-    
-   padding-left: 500px;
-   padding-top: 250px;
-   line-height: 1.5cm;
-}
-
-.login-box{
-    box-sizing: border-box;
-    border:solid black;
     width: 400px;
-    align-items: center;
-    text-align: center;
-    border-radius: 30px;
-
+    height: 650px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 500px;
+    margin-top: 50px;
+    padding: 10px;
+    border: solid 1px black;
+    border-radius: 8px;
+    gap: 50px;
+   box-shadow: 
+        20px 20px 60px #bec3cf,
+        -20px -20px 60px #ffffff;
 }
+.input-group{
+    margin-left: 45px;
+    margin-bottom: 30px ;
+     
+}
+form input{
+    gap: 60px;
+}
+.name{
+    height: 50px;
+    width: 300px;
+     border-radius: 10px;
+     border: 1px solid black;
+     text-align: center;
+}
+
+.welcome-icon{
+    margin-left: 175px;
+}
+h2{
+    margin-left: 115px;
+}
+
+span{
+    margin-left: 100px;
+    color: blue;
+}
+.container button{
+    height: 50px;
+    width: 300px;
+    margin-left: 45px;
+    border-radius: 10px;
+    box-shadow: 
+        20px 20px 60px #bec3cf,
+        -20px -20px 60px #ffffff;
+    
+}
+.continue{
+    margin-left: 130px;
+}
+.app{
+     margin-left: 140px;
+}
+#button{
+    border: 1px solid white;
+}
+#button:hover{
+    transform: translateY(-5px);
+    background-color: rgb(206, 206, 227);
+}
+
+
 
 
 
