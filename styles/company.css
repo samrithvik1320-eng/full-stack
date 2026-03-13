@@ -1,46 +1,121 @@
-:root {
-    --navy-dark:    #0D2045; /* Navbar & Footer */
-    --navy-light:   #1A3A6B; 
-    --gold-bright:  #D4A017; /* headings, button text */
-    --gold-light:   #F0C040; 
-    --gold-muted:   #C8A45A; 
-    --gold-pale:    #F5DFA0; /* card borders */
-    --text-light:   #EDE8D8;
-    --input-bg:     #F5F6FA; /* form input background */
-    --card-bg:      #FFFFFF; /* cards background */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-/* Form input fields */
-input[type="text"], input[type="email"], input[type="password"] {
-    background-color: var(--input-bg);
-    border: 1px solid var(--gold-pale);
-    color: var(--navy-dark);
-    padding: 10px 12px;
-    border-radius: 6px;
+:root{
+    --navy-dark:#0B1F3A;
+    --navy-mid:#142F54;
+    --gold:#D4A017;
+    --light-bg:#F4F6FA;
+    --white:#ffffff;
+    --text-gray:#6B7280;
 }
 
-/* Submit button */
-.registerbtn {
-    background-color: var(--navy-dark);
-    color: var(--gold-bright);
-    padding: 14px 20px;
-    border-radius: 6px;
-    font-weight: bold;
-    text-transform: uppercase;
-    border: none;
-    cursor: pointer;
+/* body */
+
+body{
+    background:var(--light-bg);
 }
 
-.registerbtn:hover {
-    background-color: var(--navy-light);
-    color: var(--gold-light);
+/* container */
+
+.container{
+    width:90%;
+    margin:auto;
 }
 
-/* Cards */
-.card {
-    background-color: var(--card-bg);
-    border: 1px solid var(--gold-pale);
-    border-radius: 8px;
-    padding: 20px;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+/* navbar */
+
+.navbar{
+    background:var(--navy-dark);
+    color:var(--gold);
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:18px 40px;
+}
+
+.navbar ul{
+    list-style:none;
+}
+
+.navbar a{
+    text-decoration:none;
+}
+
+.navbar li{
+    color:white;
+    font-size:16px;
+}
+
+.navbar li:hover{
+    color:var(--gold);
+}
+
+/* content section */
+
+.content{
+    margin-top:40px;
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:30px;
+}
+
+/* cards */
+
+.about,
+.Join,
+.Qualification{
+    background:var(--white);
+    padding:25px;
+    border-radius:12px;
+    box-shadow:0 8px 20px rgba(0,0,0,0.1);
+    transition:0.3s;
+}
+
+.about:hover,
+.Join:hover,
+.Qualification:hover{
+    transform:translateY(-5px);
+}
+
+/* heading */
+
+.content h2{
+    color:var(--navy-dark);
+    margin-bottom:15px;
+}
+
+/* list */
+
+.content ul{
+    padding-left:20px;
+}
+
+.content li{
+    margin-bottom:10px;
+    color:var(--text-gray);
+    line-height:1.6;
+}
+
+/* register button */
+
+.registerbtn{
+    display:block;
+    margin:40px auto;
+    padding:14px 40px;
+    font-size:16px;
+    background:var(--navy-dark);
+    color:var(--gold);
+    border:none;
+    border-radius:8px;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.registerbtn:hover{
+    background:var(--navy-mid);
 }
