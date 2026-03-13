@@ -91,7 +91,7 @@ const questions = [
   },
 ];
 
-// ✅ Fix 1: correct id "question-container"
+
 const container = document.getElementById("container");
 
 /* Render questions */
@@ -110,13 +110,13 @@ questions.forEach((item) => {
   container.appendChild(card);
 });
 
-/* Submit button */
+
 const submitBtn = document.createElement("button");
 submitBtn.textContent = "Submit";
-submitBtn.type = "button"; // ✅ Fix 3: prevent form submit reload
+submitBtn.type = "button"; 
 container.appendChild(submitBtn);
 
-/* Check answers */
+
 submitBtn.addEventListener("click", () => {
   let score = 0;
 
@@ -126,7 +126,7 @@ submitBtn.addEventListener("click", () => {
     );
 
     if (selectedOption) {
-      // ✅ Fix 2: q.correctAnswer instead of e.correctAnswer
+      
       if (selectedOption.value === q.correctAnswer) {
         score++;
         selectedOption.parentElement.style.border = "2px solid green";
