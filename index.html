@@ -1,143 +1,197 @@
- <!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Catch The Career - Home</title>
-  <link rel="stylesheet" href="./styles/home.css">
-</head>
-<body>
-  <div class="container">
-    <nav>
-      <h1>Catch The Career</h1>
-      <ol>
-        <li><a href="./pages/companies.html">Companies</a></li>
-        <li><a href="./pages/mock1.html">Mock Test</a></li>
-        <li><a href="./pages/gov.html">Government Exam</a></li>
-        
-      </ol>
-    </nav>
-    
-    <div class="login-box">
-      <label class="login-title">Email</label><br>
-      <input type="email" id="userName" placeholder="Example@email.com"><br>
-      <label class="login-title">Password</label><br>
-      <input type="password" id="password" placeholder="At least 8 characters">
-      <button id="btn1">Submit</button>
-    </div>
-  </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Catch The Career - Home</title>
+    <link rel="stylesheet" href="./styles/home.css" />
+  </head>
+  <body>
+    <div class="container">
+      <nav>
+        <h1>Catch The Career</h1>
+        <ol>
+          <li><a href="./pages/companies.html">Companies</a></li>
+          <li><a href="./pages/mock1.html">Mock Test</a></li>
+          <li><a href="./pages/gov.html">Government Exam</a></li>
+        </ol>
+      </nav>
 
-  <div class="feedback">
-    <div class="students">
-      <span class="letter"><h3>480+</h3></span>
-      <p>No. of Students</p>
-    </div>
-    <div class="students">
-      <span class="letter"><h3>99.8%</h3></span>
-      <p>Student Success Rate</p>
-    </div>
-    <div class="students">
-      <span class="letter"><h3>24/7</h3></span>
-      <p>Customer Support</p>
-    </div>
-  </div>
+      <div class="slider">
+        <div class="slides-wrapper">
 
-  <div class="service">
-    <h3>Service</h3>
-    <hr>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error quos<br>
-       fugiat doloribus sit veritatis nobis officia amet autem, omnis, at<br>
-       voluptates quia laudantium! Aperiam corrupti nihil labore dolorem?<br>
-       Unde, earum.</p>
-  </div>
+          <div class="slide active">
+            <img src="./assets/image 1.jpg" alt="Career">
+            <div class="slide-caption">
+              <h2>Launch Your Career</h2>
+              <p>Find the right company and crack your dream job</p>
+            </div>
+          </div>
 
-  <div class="boxes">
-    <div class="box1">
-      <h4>
-        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24">
-          <!-- Icon from Ultimate color icons by Streamline - CC BY 4.0 -->
-          <g fill="none">
-            <path fill="#e3e3e3" d="M19.652 11.044a2.63 2.63 0 1 0 0-5.261a2.63 2.63 0 0 0 0 5.26M23 15.348a3.348 3.348 0 0 0-6.695 0v2.87h1.514L18.218 23h2.87l.398-4.783H23z"/>
-            <path fill="#fff" d="M19.652 7.922a2.63 2.63 0 0 1 2.399 1.56a2.63 2.63 0 0 0-4.608-2.506a2.63 2.63 0 0 0-.19 2.506a2.63 2.63 0 0 1 2.399-1.56m0 4.078a3.35 3.35 0 0 0-3.347 3.348v2.138a3.348 3.348 0 1 1 6.695 0v-2.138A3.35 3.35 0 0 0 19.652 12"/>
-            <path stroke="#191919" stroke-linecap="round" stroke-linejoin="round" d="M19.652 11.044a2.63 2.63 0 1 0 0-5.261a2.63 2.63 0 0 0 0 5.26M23 15.348a3.348 3.348 0 0 0-6.695 0v2.87h1.514L18.218 23h2.87l.398-4.783H23z"/>
-            <path fill="#e3e3e3" d="M12 5.305A2.152 2.152 0 1 0 12 1a2.152 2.152 0 0 0 0 4.305m0 .956a2.87 2.87 0 0 0-2.87 2.87v2.39h1.436l.478 4.305h1.913l.478-4.304h1.435V9.13A2.87 2.87 0 0 0 12 6.26"/>
-            <path fill="#fff" d="M12 3.139a2.14 2.14 0 0 1 1.857 1.083c.192-.324.294-.694.296-1.07a2.152 2.152 0 0 0-4.304 0c.002.376.104.746.295 1.07a2.14 2.14 0 0 1 1.857-1.083M12 6.261a2.87 2.87 0 0 0-2.87 2.87v2.138a2.87 2.87 0 0 1 5.74 0V9.131A2.87 2.87 0 0 0 12 6.26"/>
-            <path stroke="#191919" stroke-linecap="round" stroke-linejoin="round" d="M12 5.305A2.152 2.152 0 1 0 12 1a2.152 2.152 0 0 0 0 4.305m0 .956a2.87 2.87 0 0 0-2.87 2.87v2.39h1.436l.478 4.305h1.913l.478-4.304h1.435V9.13A2.87 2.87 0 0 0 12 6.26"/>
-            <path fill="#e3e3e3" d="M4.348 11.044a2.63 2.63 0 1 0 0-5.261a2.63 2.63 0 0 0 0 5.26m3.347 4.305a3.348 3.348 0 0 0-6.695 0v2.87h1.514L2.913 23h2.87l.398-4.783h1.514z"/>
-            <path fill="#fff" d="M4.348 7.922a2.63 2.63 0 0 1 2.399 1.56a2.628 2.628 0 1 0-5.03-1.069c0 .37.08.734.232 1.07a2.63 2.63 0 0 1 2.4-1.562M4.348 12A3.35 3.35 0 0 0 1 15.348v2.138a3.348 3.348 0 1 1 6.695 0v-2.138A3.35 3.35 0 0 0 4.348 12"/>
-            <path stroke="#191919" stroke-linecap="round" stroke-linejoin="round" d="M4.348 11.044a2.63 2.63 0 1 0 0-5.261a2.63 2.63 0 0 0 0 5.26m3.347 4.305a3.348 3.348 0 0 0-6.695 0v2.87h1.514L2.913 23h2.87l.398-4.783h1.514z"/>
-          </g>
-        </svg> Team Collaboration
-      </h4>
-      <p class="para">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestiae vitae rerum perferendis, commodi consequuntur eaque numquam ipsa voluptatibus. A, necessitatibus.</p>
-      <h5 class="button">Learn More</h5>
+          <div class="slide">
+            <img src="./assets/Image 2.jpg" alt="Mock Test">
+            <div class="slide-caption">
+              <h2>Practice Mock Tests</h2>
+              <p>Sharpen your skills with real exam patterns</p>
+            </div>
+          </div>
+
+          <div class="slide">
+            <img src="./assets/image 3.jpg" alt="Government Exam">
+            <div class="slide-caption">
+              <h2>Ace Government Exams</h2>
+              <p>Prepare smart with curated government exam guides</p>
+            </div>
+          </div>
+
+        </div>
+
+        <button class="arrow left-arrow" onclick="changeSlide(-1)">&#10094;</button>
+        <button class="arrow right-arrow" onclick="changeSlide(1)">&#10095;</button>
+
+        <!-- <div class="dots">
+          <span class="dot active" onclick="goToSlide(0)"></span>
+          <span class="dot" onclick="goToSlide(1)"></span>
+          <span class="dot" onclick="goToSlide(2)"></span>
+        </div> -->
+      </div>
     </div>
 
-    <div class="box2">
-      <h4>
-        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24">
-          <!-- Icon from Material Symbols by Google -->
-          <path fill="currentColor" d="M12 22q-3.475-.875-5.738-3.988T4 11.1V5l8-3l8 3v6.1q0 3.8-2.262 6.913T12 22m0-2.1q2.425-.75 4.05-2.963T17.95 12H12V4.125l-6 2.25v5.175q0 .175.05.45H12z"/>
-        </svg> App Security
-      </h4>
-      <p class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt eum impedit laboriosam cumque vitae ducimus quaerat optio autem perspiciatis praesentium!</p>
-      <h5 class="button">Learn More</h5>
+    <div class="feedback">
+      <div class="students">
+        <span class="letter"><h3>480+</h3></span>
+        <p>No. of Students</p>
+      </div>
+      <div class="students">
+        <span class="letter"><h3>99.8%</h3></span>
+        <p>Student Success Rate</p>
+      </div>
+      <div class="students">
+        <span class="letter"><h3>24/7</h3></span>
+        <p>Customer Support</p>
+      </div>
     </div>
 
-    <div class="box3">
-      <h4>
-        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24">
-          <!-- Icon from Solar by 480 Design - CC BY 4.0 -->
-          <path fill="currentColor" d="M2 12.124C2 6.533 6.477 2 12 2s10 4.533 10 10.124v5.243c0 .817 0 1.378-.143 1.87a3.52 3.52 0 0 1-1.847 2.188c-.458.22-1.004.307-1.801.434l-.13.02a13 13 0 0 1-.727.105c-.209.02-.422.027-.64-.016a2.1 2.1 0 0 1-1.561-1.35a2.2 2.2 0 0 1-.116-.639c-.012-.204-.012-.452-.012-.742v-4.173c0-.425 0-.791.097-1.105a2.1 2.1 0 0 1 1.528-1.43c.316-.073.677-.044 1.096-.01l.093.007l.11.01c.783.062 1.32.104 1.775.275q.481.181.883.487v-1.174c0-4.811-3.853-8.711-8.605-8.711s-8.605 3.9-8.605 8.711v1.174c.267-.203.563-.368.883-.487c.455-.17.992-.213 1.775-.276l.11-.009l.093-.007c.42-.034.78-.063 1.096.01a2.1 2.1 0 0 1 1.528 1.43c.098.314.097.68.097 1.105v4.172c0 .291 0 .54-.012.743c-.012.213-.04.427-.116.638a2.1 2.1 0 0 1-1.56 1.35a2.2 2.2 0 0 1-.641.017c-.201-.02-.444-.059-.727-.104l-.13-.02c-.797-.128-1.344-.215-1.801-.436a3.52 3.52 0 0 1-1.847-2.188c-.118-.405-.139-.857-.142-1.461L2 17.58z"/>
-        </svg> Customer Support
-      </h4>
-      <p class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. At adipisci repellendus totam quibusdam suscipit natus eum accusantium, iste ullam reiciendis!</p>
-      <h5 class="button">Learn More</h5>
-    </div>
-
-    <div class="box4">
-      <h4>
-        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24">
-          <!-- Icon from Ultimate free icons by Streamline - CC BY 4.0 -->
-          <path fill="currentColor" d="M2 17.87a1 1 0 0 0-1 1v1.5a.25.25 0 0 0 .25.25h3.5a.25.25 0 0 0 .25-.25v-1.5a1 1 0 0 0-1-1Zm6-3a1 1 0 0 0-1 1v4.5a.25.25 0 0 0 .25.25h3.5a.25.25 0 0 0 .25-.25v-4.5a1 1 0 0 0-1-1Zm6-3.5a1 1 0 0 0-1 1v8a.25.25 0 0 0 .25.25h3.5a.25.25 0 0 0 .25-.25v-8a1 1 0 0 0-1-1Zm5.25 9.25h3.5a.25.25 0 0 0 .25-.25v-12a1 1 0 0 0-1-1h-2a1 1 0 0 0-1 1v12a.25.25 0 0 0 .25.25M18.07 4.21l.31.46A.74.74 0 0 0 19 5a.74.74 0 0 0 .62-.38l2-3.5a.75.75 0 0 0 0-.79a.72.72 0 0 0-.71-.33l-4 .5a.75.75 0 0 0-.53 1.16l.3.46a.24.24 0 0 1-.07.34L2.45 11.92a1 1 0 0 0-.28 1.39a1 1 0 0 0 .83.44a.94.94 0 0 0 .55-.17l14.17-9.44a.25.25 0 0 1 .35.07M1 24h22a1 1 0 0 0 .31-1.95A1 1 0 0 0 23 22H1a1 1 0 0 0-.31.05A1 1 0 0 0 1 24"/>
-        </svg> Performance Analytics
-      </h4>
-      <p class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti eaque harum debitis sunt voluptates delectus, eveniet id laudantium fugit iste.</p>
-      <h5 class="button">Learn More</h5>
-    </div>
-  </div>
-
-  <footer>
-    <div class="footer-logo">
-      <h2>Catch The Career |</h2>
-      <b>Virtual Class for Zoom</b>
-    </div>
-    <div class="subscribe">
-      <b>Subscribe to get our Newsletter</b>
-    </div>
-    <div class="email-button">
-      <input type="text" id="email" placeholder="Your Email">
-      <button class="btn2">Subscribe</button>
-    </div>
-    <div class="term">
-      <p>Career |</p>
-      <p>Privacy Policy |</p>
-      <p>Terms and Condition</p>
-    </div>
-    <div class="copy-rights">
+    <div class="service">
+      <h3>Service</h3>
+      <hr />
       <p>
-        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24">
-          <!-- Icon from MingCute Icon by MingCute Design -->
-          <g fill="none">
-            <path d="m12.593 23.258l-.011.002l-.071.035l-.02.004l-.014-.004l-.071-.035q-.016-.005-.024.005l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427q-.004-.016-.017-.018m.265-.113l-.013.002l-.185.093l-.01.01l-.003.011l.018.43l.005.012l.008.007l.201.093q.019.005.029-.008l.004-.014l-.034-.614q-.005-.018-.02-.022m-.715.002a.02.02 0 0 0-.027.006l-.006.014l-.034.614q.001.018.017.024l.015-.002l.201-.093l.01-.008l.004-.011l.017-.43l-.003-.012l-.01-.01z"/>
-            <path fill="#888888" d="M12 2c5.523 0 10 4.477 10 10s-4.477 10-10 10S2 17.523 2 12S6.477 2 12 2m0 2a8 8 0 1 0 0 16a8 8 0 0 0 0-16m0 3a5 5 0 0 1 3.75 1.692a1 1 0 1 1-1.5 1.324a3 3 0 1 0 0 3.968a1 1 0 1 1 1.5 1.324A5 5 0 1 1 12 7"/>
-          </g>
-        </svg>
-        2026 Catch the Career.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Error quos<br />
+        fugiat doloribus sit veritatis nobis officia amet autem, omnis, at<br />
+        voluptates quia laudantium! Aperiam corrupti nihil labore dolorem?<br />
+        Unde, earum.
       </p>
     </div>
-  </footer>
 
-  <script src="./script.js" type="module"></script>
-</body>
+    <div class="boxes">
+      <div class="box1">
+        <h4>
+          <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24">
+            <g fill="none">
+              <path fill="#e3e3e3" d="M19.652 11.044a2.63 2.63 0 1 0 0-5.261a2.63 2.63 0 0 0 0 5.26M23 15.348a3.348 3.348 0 0 0-6.695 0v2.87h1.514L18.218 23h2.87l.398-4.783H23z"/>
+              <path fill="#fff" d="M19.652 7.922a2.63 2.63 0 0 1 2.399 1.56a2.63 2.63 0 0 0-4.608-2.506a2.63 2.63 0 0 0-.19 2.506a2.63 2.63 0 0 1 2.399-1.56m0 4.078a3.35 3.35 0 0 0-3.347 3.348v2.138a3.348 3.348 0 1 1 6.695 0v-2.138A3.35 3.35 0 0 0 19.652 12"/>
+              <path stroke="#191919" stroke-linecap="round" stroke-linejoin="round" d="M19.652 11.044a2.63 2.63 0 1 0 0-5.261a2.63 2.63 0 0 0 0 5.26M23 15.348a3.348 3.348 0 0 0-6.695 0v2.87h1.514L18.218 23h2.87l.398-4.783H23z"/>
+              <path fill="#e3e3e3" d="M12 5.305A2.152 2.152 0 1 0 12 1a2.152 2.152 0 0 0 0 4.305m0 .956a2.87 2.87 0 0 0-2.87 2.87v2.39h1.436l.478 4.305h1.913l.478-4.304h1.435V9.13A2.87 2.87 0 0 0 12 6.26"/>
+              <path fill="#fff" d="M12 3.139a2.14 2.14 0 0 1 1.857 1.083c.192-.324.294-.694.296-1.07a2.152 2.152 0 0 0-4.304 0c.002.376.104.746.295 1.07a2.14 2.14 0 0 1 1.857-1.083M12 6.261a2.87 2.87 0 0 0-2.87 2.87v2.138a2.87 2.87 0 0 1 5.74 0V9.131A2.87 2.87 0 0 0 12 6.26"/>
+              <path stroke="#191919" stroke-linecap="round" stroke-linejoin="round" d="M12 5.305A2.152 2.152 0 1 0 12 1a2.152 2.152 0 0 0 0 4.305m0 .956a2.87 2.87 0 0 0-2.87 2.87v2.39h1.436l.478 4.305h1.913l.478-4.304h1.435V9.13A2.87 2.87 0 0 0 12 6.26"/>
+              <path fill="#e3e3e3" d="M4.348 11.044a2.63 2.63 0 1 0 0-5.261a2.63 2.63 0 0 0 0 5.26m3.347 4.305a3.348 3.348 0 0 0-6.695 0v2.87h1.514L2.913 23h2.87l.398-4.783h1.514z"/>
+              <path fill="#fff" d="M4.348 7.922a2.63 2.63 0 0 1 2.399 1.56a2.628 2.628 0 1 0-5.03-1.069c0 .37.08.734.232 1.07a2.63 2.63 0 0 1 2.4-1.562M4.348 12A3.35 3.35 0 0 0 1 15.348v2.138a3.348 3.348 0 1 1 6.695 0v-2.138A3.35 3.35 0 0 0 4.348 12"/>
+              <path stroke="#191919" stroke-linecap="round" stroke-linejoin="round" d="M4.348 11.044a2.63 2.63 0 1 0 0-5.261a2.63 2.63 0 0 0 0 5.26m3.347 4.305a3.348 3.348 0 0 0-6.695 0v2.87h1.514L2.913 23h2.87l.398-4.783h1.514z"/>
+            </g>
+          </svg>
+          Team Collaboration
+        </h4>
+        <p class="para">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestiae vitae rerum perferendis, commodi consequuntur eaque numquam ipsa voluptatibus. A, necessitatibus.</p>
+        <h5 class="button">Learn More</h5>
+      </div>
+
+      <div class="box2">
+        <h4>
+          <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24">
+            <path fill="currentColor" d="M12 22q-3.475-.875-5.738-3.988T4 11.1V5l8-3l8 3v6.1q0 3.8-2.262 6.913T12 22m0-2.1q2.425-.75 4.05-2.963T17.95 12H12V4.125l-6 2.25v5.175q0 .175.05.45H12z"/>
+          </svg>
+          App Security
+        </h4>
+        <p class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt eum impedit laboriosam cumque vitae ducimus quaerat optio autem perspiciatis praesentium!</p>
+        <h5 class="button">Learn More</h5>
+      </div>
+
+      <div class="box3">
+        <h4>
+          <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24">
+            <path fill="currentColor" d="M2 12.124C2 6.533 6.477 2 12 2s10 4.533 10 10.124v5.243c0 .817 0 1.378-.143 1.87a3.52 3.52 0 0 1-1.847 2.188c-.458.22-1.004.307-1.801.434l-.13.02a13 13 0 0 1-.727.105c-.209.02-.422.027-.64-.016a2.1 2.1 0 0 1-1.561-1.35a2.2 2.2 0 0 1-.116-.639c-.012-.204-.012-.452-.012-.742v-4.173c0-.425 0-.791.097-1.105a2.1 2.1 0 0 1 1.528-1.43c.316-.073.677-.044 1.096-.01l.093.007l.11.01c.783.062 1.32.104 1.775.275q.481.181.883.487v-1.174c0-4.811-3.853-8.711-8.605-8.711s-8.605 3.9-8.605 8.711v1.174c.267-.203.563-.368.883-.487c.455-.17.992-.213 1.775-.276l.11-.009l.093-.007c.42-.034.78-.063 1.096.01a2.1 2.1 0 0 1 1.528 1.43c.098.314.097.68.097 1.105v4.172c0 .291 0 .54-.012.743c-.012.213-.04.427-.116.638a2.1 2.1 0 0 1-1.56 1.35a2.2 2.2 0 0 1-.641.017c-.201-.02-.444-.059-.727-.104l-.13-.02c-.797-.128-1.344-.215-1.801-.436a3.52 3.52 0 0 1-1.847-2.188c-.118-.405-.139-.857-.142-1.461L2 17.58z"/>
+          </svg>
+          Customer Support
+        </h4>
+        <p class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. At adipisci repellendus totam quibusdam suscipit natus eum accusantium, iste ullam reiciendis!</p>
+        <h5 class="button">Learn More</h5>
+      </div>
+
+      <div class="box4">
+        <h4>
+          <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24">
+            <path fill="currentColor" d="M2 17.87a1 1 0 0 0-1 1v1.5a.25.25 0 0 0 .25.25h3.5a.25.25 0 0 0 .25-.25v-1.5a1 1 0 0 0-1-1Zm6-3a1 1 0 0 0-1 1v4.5a.25.25 0 0 0 .25.25h3.5a.25.25 0 0 0 .25-.25v-4.5a1 1 0 0 0-1-1Zm6-3.5a1 1 0 0 0-1 1v8a.25.25 0 0 0 .25.25h3.5a.25.25 0 0 0 .25-.25v-8a1 1 0 0 0-1-1Zm5.25 9.25h3.5a.25.25 0 0 0 .25-.25v-12a1 1 0 0 0-1-1h-2a1 1 0 0 0-1 1v12a.25.25 0 0 0 .25.25M18.07 4.21l.31.46A.74.74 0 0 0 19 5a.74.74 0 0 0 .62-.38l2-3.5a.75.75 0 0 0 0-.79a.72.72 0 0 0-.71-.33l-4 .5a.75.75 0 0 0-.53 1.16l.3.46a.24.24 0 0 1-.07.34L2.45 11.92a1 1 0 0 0-.28 1.39a1 1 0 0 0 .83.44a.94.94 0 0 0 .55-.17l14.17-9.44a.25.25 0 0 1 .35.07M1 24h22a1 1 0 0 0 .31-1.95A1 1 0 0 0 23 22H1a1 1 0 0 0-.31.05A1 1 0 0 0 1 24"/>
+          </svg>
+          Performance Analytics
+        </h4>
+        <p class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti eaque harum debitis sunt voluptates delectus, eveniet id laudantium fugit iste.</p>
+        <h5 class="button">Learn More</h5>
+      </div>
+    </div>
+
+    <footer>
+      <div class="footer-logo">
+        <h2>Catch The Career |</h2>
+        <b>Virtual Class for Zoom</b>
+      </div>
+      <div class="subscribe">
+        <b>Subscribe to get our Newsletter</b>
+      </div>
+      <div class="email-button">
+        <input type="text" id="email" placeholder="Your Email" />
+        <button class="btn2">Subscribe</button>
+      </div>
+      <div class="term">
+        <p>Career |</p>
+        <p>Privacy Policy |</p>
+        <p>Terms and Condition</p>
+      </div>
+      <div class="copy-rights">
+        <p>
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24">
+            <g fill="none">
+              <path d="m12.593 23.258l-.011.002l-.071.035l-.02.004l-.014-.004l-.071-.035q-.016-.005-.024.005l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427q-.004-.016-.017-.018m.265-.113l-.013.002l-.185.093l-.01.01l-.003.011l.018.43l.005.012l.008.007l.201.093q.019.005.029-.008l.004-.014l-.034-.614q-.005-.018-.02-.022m-.715.002a.02.02 0 0 0-.027.006l-.006.014l-.034.614q.001.018.017.024l.015-.002l.201-.093l.01-.008l.004-.011l.017-.43l-.003-.012l-.01-.01z"/>
+              <path fill="#888888" d="M12 2c5.523 0 10 4.477 10 10s-4.477 10-10 10S2 17.523 2 12S6.477 2 12 2m0 2a8 8 0 1 0 0 16a8 8 0 0 0 0-16m0 3a5 5 0 0 1 3.75 1.692a1 1 0 1 1-1.5 1.324a3 3 0 1 0 0 3.968a1 1 0 1 1 1.5 1.324A5 5 0 1 1 12 7"/>
+            </g>
+          </svg>
+          2026 Catch the Career.
+        </p>
+      </div>
+    </footer>
+
+    <script>
+      let currentSlide = 0;
+const slides = document.querySelectorAll('.slide');
+const dots   = document.querySelectorAll('.dot');
+
+function showSlide(index) {
+  slides.forEach(s => s.classList.remove('active'));
+  dots.forEach(d => d.classList.remove('active'));
+  currentSlide = (index + slides.length) % slides.length;
+  slides[currentSlide].classList.add('active');
+  dots[currentSlide].classList.add('active');
+}
+
+function changeSlide(dir) {
+  showSlide(currentSlide + dir);
+}
+
+function goToSlide(index) {
+  showSlide(index);
+}
+
+// Auto-play — 4 seconds
+setInterval(() => changeSlide(1), 4000);
+    </script>
+  </body>
 </html>
