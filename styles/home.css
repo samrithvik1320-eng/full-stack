@@ -60,7 +60,7 @@ nav ol li a:hover {
   width: 100%;
   overflow: hidden;
   border-radius: 12px;
-  margin-top: 1.5rem;
+ 
 }
 
 .slides-wrapper {
@@ -78,7 +78,6 @@ nav ol li a:hover {
 
 .slide img {
   width: 100%;
-  height: 400px;
   object-fit: cover;
   border-radius: 12px;
   display: block;
@@ -158,7 +157,7 @@ nav ol li a:hover {
   background: #0D1B3E;
   border-top: 2px solid #C9A84C;
   border-bottom: 2px solid #C9A84C;
-  margin-top: 150px;
+  
 }
 
 .students {

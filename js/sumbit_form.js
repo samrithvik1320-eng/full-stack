@@ -119,4 +119,5 @@ submitBtn.addEventListener("click", () => {
   });
 
   alert(`Your score: ${score} / ${questions.length}`);
+  window.location.reload()
 });

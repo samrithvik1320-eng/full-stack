@@ -101,10 +101,10 @@ questions.forEach((item) => {
 
   card.innerHTML = `
     <b>${item.id}. ${item.question}</b><br><br>
-    <input type="radio" name="question${item.id}" value="a"> ${item.a}<br>
-    <input type="radio" name="question${item.id}" value="b"> ${item.b}<br>
-    <input type="radio" name="question${item.id}" value="c"> ${item.c}<br>
-    <input type="radio" name="question${item.id}" value="d"> ${item.d}<br>
+    <input type="radio" name="question${item.id}" value="a" required> ${item.a}<br>
+    <input type="radio" name="question${item.id}" value="b" required> ${item.b}<br>
+    <input type="radio" name="question${item.id}" value="c" required> ${item.c}<br>
+    <input type="radio" name="question${item.id}" value="d" required> ${item.d}<br>
   `;
 
   container.appendChild(card);
@@ -113,20 +113,44 @@ questions.forEach((item) => {
 
 const submitBtn = document.createElement("button");
 submitBtn.textContent = "Submit";
-submitBtn.type = "button"; 
+submitBtn.type = "submit"; 
 container.appendChild(submitBtn);
 
 
-submitBtn.addEventListener("click", () => {
-  let score = 0;
+// submitBtn.addEventListener("click", () => {
+//   let score = 0;
 
+//   questions.forEach((q) => {
+//     const selectedOption = document.querySelector(
+//       `input[name="question${q.id}"]:checked`
+//     );
+
+//     if (selectedOption) {
+      
+//       if (selectedOption.value === q.correctAnswer) {
+//         score++;
+//         selectedOption.parentElement.style.border = "2px solid green";
+//       } else {
+//         selectedOption.parentElement.style.border = "2px solid red";
+//       }
+//     }
+    
+//   });
+
+//   alert(`Your score: ${score} / ${questions.length}`);
+ 
+// });
+ container.addEventListener("submit", (e) => {
+  let score = 0;
+  e.preventDefault()
   questions.forEach((q) => {
     const selectedOption = document.querySelector(
       `input[name="question${q.id}"]:checked`
     );
 
+    const allOptions = document.querySelectorAll(`input[name="question${q.id}"]`);
+
     if (selectedOption) {
-      
       if (selectedOption.value === q.correctAnswer) {
         score++;
         selectedOption.parentElement.style.border = "2px solid green";
@@ -134,7 +158,27 @@ submitBtn.addEventListener("click", () => {
         selectedOption.parentElement.style.border = "2px solid red";
       }
     }
-  });
 
+    // ✅ q[q.correctAnswer] - array la correctAnswer key vechi correct option text edukrom
+    allOptions.forEach((option) => {
+      if (option.value === q.correctAnswer) {
+        const correctText = q[q.correctAnswer]; // e.g. q["b"] => "Managing hardware and software"
+
+        const label = document.createElement("span");
+        label.textContent = ` ✅ Correct Answer: ${correctText}`;
+        label.style.color = "green";
+        label.style.fontWeight = "bold";
+        label.classList.add("correct-label");
+
+        if (!option.parentElement.querySelector(".correct-label")) {
+          option.parentElement.appendChild(label);
+        }
+      }
+    });
+  });
+  const inputs = document.querySelectorAll("input")
+  inputs.forEach((input) => {
+    input.disabled = true
+  })
   alert(`Your score: ${score} / ${questions.length}`);
 });
